@@ -194,4 +194,7 @@ This Epic involves creating documentation for the APIs and performing a sprint r
 |------------------------------------------------|------------------------------------------------------------|----------------------|
 | **Epic 1**: Set up Database Schema & Models    | 1.1 Set up Database & Migrations<br>1.2 Create Core Models   | 1 hour               |
 | **Epic 2**: Implement CRUD API for Property & Tenant | 2.1 Implement `Property` CRUD APIs<br>2.2 Implement `Tenant` CRUD APIs | 1 hour               |
-| **Epic 3**: Implement CRUD API for Lease, Payment
+| **Epic 3**: Implement CRUD API for Lease, Payment & Invoice | 3.1 Implement `Lease` CRUD APIs<br>3.2 Implement `Payment` CRUD APIs<br>3.3 Implement `Invoice` CRUD APIs | 1.5 hours            |
+| **Epic 4**: Implement Maintenance Request & Service Provider | 4.1 Implement `Maintenance Request` CRUD APIs<br>4.2 Implement `Service Provider` CRUD APIs | 1 hour               |
+| **Epic 5**: Final Testing & Deployment        | 5.1 Perform Final API Testing<br>5.2 Implement Error Handling & Validation<br>5.3 Deploy to Staging Environment | 1 hour               |
+| **Epic 6**: Documentation & Sprint Retrospective | 6.1 Document API Endpoints<br>6.2 Sprint Retrospective      | 30 minutes           |
