@@ -1,0 +1,154 @@
+[
+  {
+    "title": "Epic 1: Set up Database Schema & Models",
+    "body": "This Epic focuses on the foundational work to set up the database schema, relationships, and tables for the core entities.",
+    "labels": ["Epic"],
+    "assignees": [],
+    "milestone": null,
+    "issues": [
+      {
+        "title": "User Story 1.1: Set Up Database & Migrations",
+        "body": "- **As a** developer,\n- **I want** to set up the database connection and create initial migrations,\n- **So that** I can build a foundation for the data model entities and their relationships.\n\n**Acceptance Criteria**:\n- Database connection is successfully established.\n- Database migrations for core tables are created.\n- Initial data for testing is inserted.",
+        "labels": ["User Story", "Backend"],
+        "assignees": [],
+        "milestone": null
+      },
+      {
+        "title": "User Story 1.2: Create `Property`, `Tenant`, `Lease`, and `Country` Models",
+        "body": "- **As a** developer,\n- **I want** to create the `Property`, `Tenant`, `Lease`, and `Country` models and define relationships,\n- **So that** I can ensure the data model is aligned with the business needs.\n\n**Acceptance Criteria**:\n- `Property`, `Tenant`, `Lease`, and `Country` models are defined.\n- Foreign key relationships between entities are established (e.g., `Tenant` to `Property`).\n- Model validation is in place (e.g., email, rent amount).",
+        "labels": ["User Story", "Backend"],
+        "assignees": [],
+        "milestone": null
+      }
+    ]
+  },
+  {
+    "title": "Epic 2: Implement CRUD API for Property & Tenant",
+    "body": "This Epic focuses on creating the API endpoints for managing properties and tenants, which are key entities in the data model.",
+    "labels": ["Epic"],
+    "assignees": [],
+    "milestone": null,
+    "issues": [
+      {
+        "title": "User Story 2.1: Implement `Property` CRUD APIs",
+        "body": "- **As a** developer,\n- **I want** to implement API endpoints to manage properties (create, read, update, delete),\n- **So that** users can interact with properties through the system.\n\n**Acceptance Criteria**:\n- API routes for `Property` CRUD operations are created (`POST`, `GET`, `PUT`, `DELETE`).\n- API responses should include relevant status codes (e.g., `200 OK`, `201 Created`, `404 Not Found`).\n- Test cases for API routes are written and pass successfully.",
+        "labels": ["User Story", "API", "Backend"],
+        "assignees": [],
+        "milestone": null
+      },
+      {
+        "title": "User Story 2.2: Implement `Tenant` CRUD APIs",
+        "body": "- **As a** developer,\n- **I want** to implement API endpoints to manage tenants (create, read, update, delete),\n- **So that** users can manage tenant data within the system.\n\n**Acceptance Criteria**:\n- API routes for `Tenant` CRUD operations are created (`POST`, `GET`, `PUT`, `DELETE`).\n- API responses should include relevant status codes (e.g., `200 OK`, `201 Created`, `404 Not Found`).\n- Test cases for API routes are written and pass successfully.",
+        "labels": ["User Story", "API", "Backend"],
+        "assignees": [],
+        "milestone": null
+      }
+    ]
+  },
+  {
+    "title": "Epic 3: Implement CRUD API for Lease, Payment & Invoice",
+    "body": "This Epic deals with more complex entities like **Leases**, **Payments**, and **Invoices**, which will manage the contracts and financial transactions.",
+    "labels": ["Epic"],
+    "assignees": [],
+    "milestone": null,
+    "issues": [
+      {
+        "title": "User Story 3.1: Implement `Lease` CRUD APIs",
+        "body": "- **As a** developer,\n- **I want** to implement API endpoints to manage leases (create, read, update, delete),\n- **So that** users can manage rental agreements between tenants and properties.\n\n**Acceptance Criteria**:\n- API routes for `Lease` CRUD operations are created (`POST`, `GET`, `PUT`, `DELETE`).\n- API responses should include relevant status codes (e.g., `200 OK`, `201 Created`, `404 Not Found`).\n- Test cases for API routes are written and pass successfully.",
+        "labels": ["User Story", "API", "Backend"],
+        "assignees": [],
+        "milestone": null
+      },
+      {
+        "title": "User Story 3.2: Implement `Payment` CRUD APIs",
+        "body": "- **As a** developer,\n- **I want** to implement API endpoints to manage payments (create, read, update, delete),\n- **So that** users can track and process rental payments made by tenants.\n\n**Acceptance Criteria**:\n- API routes for `Payment` CRUD operations are created (`POST`, `GET`, `PUT`, `DELETE`).\n- API responses should include relevant status codes (e.g., `200 OK`, `201 Created`, `404 Not Found`).\n- Payment information (amount, date, tenant, lease) is recorded correctly.\n- Test cases for API routes are written and pass successfully.",
+        "labels": ["User Story", "API", "Backend"],
+        "assignees": [],
+        "milestone": null
+      },
+      {
+        "title": "User Story 3.3: Implement `Invoice` CRUD APIs",
+        "body": "- **As a** developer,\n- **I want** to implement API endpoints to manage invoices (create, read, update, delete),\n- **So that** users can track invoices generated for payments.\n\n**Acceptance Criteria**:\n- API routes for `Invoice` CRUD operations are created (`POST`, `GET`, `PUT`, `DELETE`).\n- API responses should include relevant status codes (e.g., `200 OK`, `201 Created`, `404 Not Found`).\n- Test cases for API routes are written and pass successfully.",
+        "labels": ["User Story", "API", "Backend"],
+        "assignees": [],
+        "milestone": null
+      }
+    ]
+  },
+  {
+    "title": "Epic 4: Implement Maintenance Request & Service Provider",
+    "body": "This Epic focuses on creating APIs to handle tenant maintenance requests and managing service providers that will fulfill these requests.",
+    "labels": ["Epic"],
+    "assignees": [],
+    "milestone": null,
+    "issues": [
+      {
+        "title": "User Story 4.1: Implement `Maintenance Request` CRUD APIs",
+        "body": "- **As a** developer,\n- **I want** to implement API endpoints to manage maintenance requests,\n- **So that** tenants can submit maintenance issues and track their status.\n\n**Acceptance Criteria**:\n- API routes for `Maintenance Request` CRUD operations are created (`POST`, `GET`, `PUT`, `DELETE`).\n- API responses should include relevant status codes (e.g., `200 OK`, `201 Created`, `404 Not Found`).\n- Maintenance requests are linked to tenants and properties.\n- Test cases for API routes are written and pass successfully.",
+        "labels": ["User Story", "API", "Backend"],
+        "assignees": [],
+        "milestone": null
+      },
+      {
+        "title": "User Story 4.2: Implement `Service Provider` CRUD APIs",
+        "body": "- **As a** developer,\n- **I want** to implement API endpoints to manage service providers,\n- **So that** users can assign maintenance tasks to service providers and track their progress.\n\n**Acceptance Criteria**:\n- API routes for `Service Provider` CRUD operations are created (`POST`, `GET`, `PUT`, `DELETE`).\n- API responses should include relevant status codes (e.g., `200 OK`, `201 Created`, `404 Not Found`).\n- Service providers can be linked to specific maintenance requests.\n- Test cases for API routes are written and pass successfully.",
+        "labels": ["User Story", "API", "Backend"],
+        "assignees": [],
+        "milestone": null
+      }
+    ]
+  },
+  {
+    "title": "Epic 5: Final Testing & Deployment",
+    "body": "This Epic focuses on ensuring everything works as expected and deploying the system to a staging environment.",
+    "labels": ["Epic"],
+    "assignees": [],
+    "milestone": null,
+    "issues": [
+      {
+        "title": "User Story 5.1: Perform Final API Testing",
+        "body": "- **As a** developer,\n- **I want** to ensure all APIs are tested thoroughly before deployment,\n- **So that** the system is free of bugs and meets requirements.\n\n**Acceptance Criteria**:\n- All API routes have been tested manually using **Postman** or **Swagger**.\n- Test cases cover all CRUD operations for `Property`, `Tenant`, `Lease`, `Payment`, `Invoice`, `Maintenance Request`, and `Service Provider`.\n- All tests pass without errors.",
+        "labels": ["User Story", "Testing", "Backend"],
+        "assignees": [],
+        "milestone": null
+      },
+      {
+        "title": "User Story 5.2: Implement Error Handling & Validation",
+        "body": "- **As a** developer,\n- **I want** to implement proper error handling and validation for API endpoints,\n- **So that** users get meaningful feedback and the system is more resilient to invalid inputs.\n\n**Acceptance Criteria**:\n- Validation errors (e.g., missing required fields, invalid email format) are returned with appropriate status codes (e.g., `400 Bad Request`).\n- Internal errors (e.g., database issues) are captured with status code `500 Internal Server Error`.\n- API responses include user-friendly error messages where applicable.",
+        "labels": ["User Story", "Backend", "Testing"],
+        "assignees": [],
+        "milestone": null
+      },
+      {
+        "title": "User Story 5.3: Deploy to Staging Environment",
+        "body": "- **As a** developer,\n- **I want** to deploy the application to a staging environment,\n- **So that** the system can be tested and reviewed before being put into production.\n\n**Acceptance Criteria**:\n- The application is deployed to a staging server (e.g., **Heroku**, **AWS**, **DigitalOcean**).\n- The database is correctly set up with necessary migrations.\n- All API endpoints are accessible and functional.",
+        "labels": ["User Story", "Deployment"],
+        "assignees": [],
+        "milestone": null
+      }
+    ]
+  },
+  {
+    "title": "Epic 6: Documentation & Sprint Retrospective",
+    "body": "This Epic involves creating documentation for the APIs and performing a sprint retrospective to evaluate the work.",
+    "labels": ["Epic"],
+    "assignees": [],
+    "milestone": null,
+    "issues": [
+      {
+        "title": "User Story 6.1: Document API Endpoints",
+        "body": "- **As a** developer,\n- **I want** to document the API endpoints in a centralized location,\n- **So that** the development team and stakeholders can understand the API usage.\n\n**Acceptance Criteria**:\n- API documentation is created using **Swagger**, **Postman**, or a similar tool.\n- Each API route is documented with information about HTTP methods, request parameters, responses, and status codes.",
+        "labels": ["User Story", "Documentation"],
+        "assignees": [],
+        "milestone": null
+      },
+      {
+        "title": "User Story 6.2: Sprint Retrospective",
+        "body": "- **As a** Scrum Master,\n- **I want** to hold a sprint retrospective meeting,\n- **So that** the team can discuss what went well and areas for improvement.\n\n**Acceptance Criteria**:\n- Team members share feedback on the sprint.\n- Actionable items for process improvement are documented.\n- The retrospective concludes with actionable insights.",
+        "labels": ["User Story", "Meeting"],
+        "assignees": [],
+        "milestone": null
+      }
+    ]
+  }
+]
